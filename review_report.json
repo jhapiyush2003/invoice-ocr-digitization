@@ -1,0 +1,81 @@
+{
+    "processed_files": 4,
+    "valid_invoices": 0,
+    "needs_review": 4,
+    "stored_invoice_count": 0,
+    "results": [
+        {
+            "source_filename": "invoice-101-copy.png",
+            "raw_ocr_text": "SYNTHETIC TEST INVOICE\nInvoice: TNM-101\n\nVendor: ACME OFFICE SUPPLIES\nDate: 01/10/2026\n\nCurrency: INR\n\nSubtotal: 1,200.50\n\nTax: 216.09\n\nTotal: 1,416.59",
+            "status": "needs_review",
+            "review_reasons": [
+                "Missing or unreadable field: invoice_number",
+                "Amount mismatch: subtotal + tax does not equal total"
+            ],
+            "invoice": {
+                "invoice_number": null,
+                "vendor": "ACME OFFICE SUPPLIES",
+                "invoice_date": "2026-10-01",
+                "currency": "INR",
+                "subtotal": "1200.50",
+                "tax": "216.09",
+                "total": "1200.50"
+            }
+        },
+        {
+            "source_filename": "invoice-101.png",
+            "raw_ocr_text": "SYNTHETIC TEST INVOICE\nInvoice: TNM-101\n\nVendor: Acme Office Supplies\nDate: 2026-10-01\n\nCurrency: INR\n\nSubtotal: 1200.50\n\nTax: 216.09\n\nTotal: 1416.59",
+            "status": "needs_review",
+            "review_reasons": [
+                "Missing or unreadable field: invoice_number",
+                "Amount mismatch: subtotal + tax does not equal total"
+            ],
+            "invoice": {
+                "invoice_number": null,
+                "vendor": "Acme Office Supplies",
+                "invoice_date": "2026-10-01",
+                "currency": "INR",
+                "subtotal": "1200.50",
+                "tax": "216.09",
+                "total": "1200.50"
+            }
+        },
+        {
+            "source_filename": "invoice-102.png",
+            "raw_ocr_text": "SYNTHETIC TEST INVOICE\nInvoice: TNM-102\n\nVendor: Beta Print Studio\nDate: 2026-10-02\nCurrency: INR\n\nSubtotal: 1500.00\n\nTax: 270.00\n\nTotal: 1770.00",
+            "status": "needs_review",
+            "review_reasons": [
+                "Missing or unreadable field: invoice_number",
+                "Amount mismatch: subtotal + tax does not equal total"
+            ],
+            "invoice": {
+                "invoice_number": null,
+                "vendor": "Beta Print Studio",
+                "invoice_date": "2026-10-02",
+                "currency": "INR",
+                "subtotal": "1500.00",
+                "tax": "270.00",
+                "total": "1500.00"
+            }
+        },
+        {
+            "source_filename": "invoice-103-review.png",
+            "raw_ocr_text": "SYNTHETIC TEST INVOICE\nInvoice: TNM-103\nVendor: Gamma Paper Co\nDate: [not supplied]\nCurrency: INR\nSubtotal: 1000.00\n\nTax: 180.00\n\nTotal: 1170.00",
+            "status": "needs_review",
+            "review_reasons": [
+                "Missing or unreadable field: invoice_number",
+                "Missing or unreadable field: invoice_date",
+                "Amount mismatch: subtotal + tax does not equal total"
+            ],
+            "invoice": {
+                "invoice_number": null,
+                "vendor": "Gamma Paper Co",
+                "invoice_date": null,
+                "currency": "INR",
+                "subtotal": "1000.00",
+                "tax": "180.00",
+                "total": "1000.00"
+            }
+        }
+    ]
+}
